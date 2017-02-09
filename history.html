@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>history of {{name}}</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/wiki.css">
+  </head>
+  <body>
+  	<div class="tool-area">
+      {% if username %}
+      {{tool_logd}} | <a class="tool-link" href="javascript:window.history.back()">cancel</a><noscript>Enable javascript you heathen.</noscript>
+      <br>{{username}}
+      {% endif %}
+    </div>
+    <h1>This {{name}}'s' History page.</h1>
+    {% for page in history%}
+      <form class="el-1" action="" method="post">
+        <button class="tool-link" name="view" value="view">View</button>
+      </form>| 
+      <form class="el-2" action="" method="post">
+        <button class="tool-link" name="edit" value="edit">Edit</button>
+      </form>
+      {{page.last_edited}}
+      {{page.created}}
+      <br>
+      <div class="make-plain">{{page.content}}</div>
+      <br><br>
+    {% endfor %}
+  </body>
+</html>
+
+
