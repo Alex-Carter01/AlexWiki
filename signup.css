@@ -1,0 +1,57 @@
+*{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.login-form {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}
+.login-label {
+    font-size: 32px;
+    color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.tool-area {
+    font-size: 13px;
+    color: gray;
+    position: absolute;
+    top: 10px;
+    right: 7%;
+}
+
+.tool-link {
+    color: gray;
+    text-decoration: none;
+}
+.label {
+  color: blue;
+}
+.error {
+  color: red;
+}
+
+.login-area {
+    font-size: 20px;
+    color: gray;
+    position: absolute;
+    top: 20px;
+    left: 220px;
+}
+
+.login-link {
+    color: gray;
+    text-decoration: none;
+}
+
+.login-link:visited {
+    color: gray;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+
